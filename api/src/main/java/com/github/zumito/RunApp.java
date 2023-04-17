@@ -4,12 +4,14 @@ import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 
 public class RunApp {
-    public static JDA Jda;
+    private ZumitoAPI zumitoAPI;
 
     public void run() {
         try {
-            Jda = JDABuilder.createDefault("TOKENHERE")
-                    .build().awaitReady();
+            zumitoAPI.jda = JDABuilder
+                    .createDefault("TOKENHERE")
+                    .build()
+                    .awaitReady();
             //Jda.addEventListener(new MessageHandler());
 
         } catch (InterruptedException e) {
