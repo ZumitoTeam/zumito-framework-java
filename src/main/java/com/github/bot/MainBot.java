@@ -21,5 +21,7 @@ public class MainBot {
             System.exit(1);
         }
         System.out.println("[ZumitoJava] Started Zumito Bot!");
+
+        new com.github.zumito.Main();
     }
 }
