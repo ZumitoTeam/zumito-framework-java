@@ -11,14 +11,14 @@ import java.io.FileNotFoundException;
 public class RunApp {
     private ZumitoAPI zumitoAPI;
     private Yaml yaml;
-    private FileManager fileManager;
+
 
     public void run() {
 
         try {
-            fileManager = new FileManager("config.yml");
+
             zumitoAPI.jda = JDABuilder
-                    .createDefault(fileManager.getString("token"))
+                    .createDefault(zumitoAPI.getConfig().getString("token"))
                     .build()
                     .awaitReady();
             yaml = new Yaml();
