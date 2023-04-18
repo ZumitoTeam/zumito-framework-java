@@ -12,22 +12,16 @@ public class RunApp {
     private ZumitoAPI zumitoAPI;
     private Yaml yaml;
 
-
-    public void run() {
+    public void run(String token) {
 
         try {
-
             zumitoAPI.jda = JDABuilder
-                    .createDefault(zumitoAPI.getConfig().getString("token"))
+                    .createDefault(token)
                     .build()
                     .awaitReady();
-            yaml = new Yaml();
-            Config config = yaml.loadAs(new FileInputStream("config.yml"), Config.class);
         } catch (InterruptedException e) {
             e.printStackTrace();
             System.exit(1);
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
         }
         System.out.println("[ZumitoJava] Started Zumito Bot!");
     }
