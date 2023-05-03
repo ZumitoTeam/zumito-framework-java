@@ -13,7 +13,6 @@ public class RunApp {
     private Yaml yaml;
 
     public void run(String token) {
-
         try {
             zumitoAPI.jda = JDABuilder
                     .createDefault(token)
@@ -21,7 +20,6 @@ public class RunApp {
                     .awaitReady();
         } catch (InterruptedException e) {
             e.printStackTrace();
-            System.exit(1);
         }
         System.out.println("[ZumitoJava] Started Zumito Bot!");
     }
