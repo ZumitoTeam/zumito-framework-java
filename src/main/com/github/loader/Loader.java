@@ -1,5 +1,6 @@
 package main.com.github.loader;
 
+import main.com.github.loader.database.DatabaseManager;
 import main.com.github.loader.database.model.Database;
 
 import java.util.Scanner;
@@ -17,6 +18,10 @@ public class Loader {
         databaseName = scanner.next();
         Database.valueOf(databaseName);
 
-        System.out.print("Creating file...");
+        System.out.print("Bot token: "
+                + token
+                + "\n"
+                + "Database: "
+                + databaseName);
     }
 }
