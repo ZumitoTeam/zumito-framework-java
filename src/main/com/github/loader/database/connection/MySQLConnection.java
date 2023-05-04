@@ -7,6 +7,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class MySQLConnection implements IConnection{
+    private Connection connection;
 
     @Override
     public void start() {
@@ -27,11 +28,13 @@ public class MySQLConnection implements IConnection{
 
     @Override
     public void stop() {
-        Connection connection = null;
         try {
             connection.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+    public Connection getConnection() {
+        return connection;
     }
 }
