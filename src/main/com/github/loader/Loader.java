@@ -1,6 +1,5 @@
 package main.com.github.loader;
 
-import main.com.github.loader.database.DatabaseManager;
 import main.com.github.loader.database.model.Database;
 
 import java.util.Scanner;
