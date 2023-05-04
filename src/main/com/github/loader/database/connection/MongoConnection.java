@@ -1,6 +1,6 @@
-package com.github.zumito.database.connection;
+package main.com.github.loader.database.connection;
 
-import com.github.zumito.database.impl.IConnection;
+import main.com.github.loader.database.impl.IConnection;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoDatabase;

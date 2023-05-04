@@ -1,4 +1,4 @@
-package com.github.zumito.database.model;
+package main.com.github.loader.database.model;
 
 public enum Database {
     MONGO,

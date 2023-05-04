@@ -1,4 +1,4 @@
-package com.github.zumito.database.impl;
+package main.com.github.loader.database.impl;
 
 public interface IConnection  {
     void start();

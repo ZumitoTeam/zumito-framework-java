@@ -1,9 +1,7 @@
-package com.github.zumito;
+package main.com.github.loader;
 
-import com.github.zumito.file.FileManager;
 import net.dv8tion.jda.api.JDA;
 
-import java.io.FileNotFoundException;
 
 public class ZumitoAPI {
     public JDA jda;
