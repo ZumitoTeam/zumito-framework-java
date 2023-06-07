@@ -1,2 +1,3 @@
-# zumito-framework-java
-WIP Discord bot framework made with java
+# Zumito Framework for Java
+
+### WIP Discord bot -> A framework made with Java
